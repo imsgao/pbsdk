@@ -42,3 +42,10 @@ func ResponseFromResty(resp *resty.Response) *Response {
 	}
 	return data
 }
+
+func ResponseWithStatus(code int, err error) *Response {
+	return &Response{
+		Code:    code,
+		Message: err.Error(),
+	}
+}

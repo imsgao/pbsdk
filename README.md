@@ -1,0 +1,2 @@
+# pbsdk
+PocketBase Golang SDK
